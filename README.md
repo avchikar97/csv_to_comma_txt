@@ -1,6 +1,6 @@
 # csv_to_comma_txt
 
-A quick Python script meant to support collaborating in Google Drive to create a skribbl.io deck. Outputs the first column of inputted CSVs to a comma-separated string ouputted into a .txt.
+A quick Python script meant to support collaborating in Google Drive to create a custom skribbl.io deck. Outputs the first column of inputted CSVs to a comma-separated string ouputted into a .txt.
 
 ### Requirements
 - python 3.5.3 or later (can be installed [here](https://www.python.org/downloads/))
