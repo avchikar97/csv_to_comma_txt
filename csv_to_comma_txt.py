@@ -1,6 +1,8 @@
 import pandas as pd
 import sys
 
+DEBUG=0
+
 def output_csv_txt(filename: str):
     ### Read, pre-process
     df = pd.read_csv(filename, header=None)
@@ -24,7 +26,8 @@ def output_csv_txt(filename: str):
 
     ### Output
     file.write(output) # nice output
-    #print(output) # console print visual confirmation
+    if(DEBUG):
+        print(output) # console print visual confirmation
 
 
 def csv_to_comma_txt():
