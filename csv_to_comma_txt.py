@@ -28,12 +28,16 @@ def output_csv_txt(filename: str):
 
 
 def csv_to_comma_txt():
-    if len(sys.argv) < 1:
-        print("ERROR: needs input .csv files")
-        return
-
     file_list = sys.argv
     del file_list[0] # remove csv_to_comma_txt.py from args
+
+    if len(sys.argv) < 1:
+        error = (
+            f"ERROR: please specify which .csv files to process\n"
+            f"Correct usage: python3 {__file__} \"Animals - Sheet1.csv\" \"Anime list - Sheet1.csv\""
+        )
+        print(error)
+        return
 
     for file_name in sys.argv:
         print(f"Outputting {file_name} as comma-separated string in {file_name}.output.txt")
